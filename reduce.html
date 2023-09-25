@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the reduction method</h1>
+    <p>Reduce lets you find all the sum in the array element instead of listing them all</p>
+     
+    <p id="demo"></p>
+
+    <script>
+      var  numbers = [45, 4, 9, 16, 25];
+      var reduced = numbers.reduce(myFunction);
+
+      document.getElementById("demo").innerHTML = reduced ;
+
+
+
+      function myFunction(total ,value , index , array){
+
+        return total + value ;
+
+      }
+    </script>
+
+
+    
+    
+</body>
+</html>

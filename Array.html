@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array for each</title>
+</head>
+<body>
+    <h1>Arrays in Java script</h1>
+    <h2>This is the array method</h2>
+    <p>to check if the it is an array please click on the button </p>
+ 
+    <button onclick="myFunction()">Press me </button>
+    <p id = "demo"></p>
+
+    <script>
+        function myFunction(){
+            var isArray = ["I","am","an", "array"]
+            var x = document.getElementById("demo");
+            x.innerHTML = Array.isArray(isArray)
+        }
+    </script>
+</body>
+</html>

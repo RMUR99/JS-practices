@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Every</title>
+</head>
+<body>
+    <h1>Array Every Methods</h1>
+    <p>Array every checks all elements of the array</p>
+     
+    <p id="demo"></p>
+
+    <script>
+     var numbers = [45, 4, 9, 16, 25]
+     var over18All = numbers.every(myFunction);
+     var over18AllSome = numbers.some(myFunction)
+
+     document.getElementById("demo").innerHTML = "all over 18 " + over18All + " " + "some over 18 is  " + over18AllSome;
+     
+     function myFunction(value , index , array){
+         return value >18
+
+     }
+
+    </script>
+
+</body>
+</html>

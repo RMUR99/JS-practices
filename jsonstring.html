@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json string </title>
+</head>
+<body>
+    <h1>Making objects from a JSON STRING </h1>
+    <p id = "root"></p>
+
+    <script>
+
+       const personalInfo = '{"name": "RM " , "age" : 24 , "city" : "New York"}' 
+
+       const obj = JSON.parse(personalInfo)
+
+       var stringConversion = JSON.stringify(personalInfo)
+
+       document.getElementById("root").innerHTML = obj.name + "" + obj.age + "  "
+       +" " + stringConversion ;
+
+    </script>
+
+
+
+    
+</body>
+</html>

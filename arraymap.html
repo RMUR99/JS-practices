@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map</title>
+</head>
+<body>
+    <h1>Js Array mapping method</h1>
+    <p>In this example we are gonna create a new array by mapping thorugh elements</p>
+  
+    <p id ="demo"></p>
+
+    <script>
+      var oldArray= [45, 4, 9, 16, 25];
+
+      var newArray = oldArray.map(myFunction);
+      
+      document.getElementById("demo").innerHTML = newArray;
+    
+      function myFunction( value , index , array){
+       
+   
+      return value *2;
+   
+        
+
+      }
+
+    </script>
+    
+</body>
+</html>
